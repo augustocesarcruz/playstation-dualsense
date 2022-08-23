@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="img/logo.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Controle sem fio DualSense</a></li>
+                    <li><a href="">Headset sem fio PULSE 3D</a></li>
+                    <li><a href=""> Controle de mídia</a></li>
+                    <li><a href="">Câmera HD</a></li>
+                </ul>
+            </nav>
+            <img src="img/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+    <div class="row">
+        <div class="col-1">
+            <h2>SONY<br>DualSense PS5</h2>
+            <h3>Controle sem fio para Playstation 5</h3>
+            <p>Descubra uma experiência de jogos mais profunda e altamente imersiva1 com o novo e inovador controle do PS5™ .</p>
+            <h4>R$ 249,90</h4>
+            <button type="button">Compre agora<img src="img/arrow.png">
+            </button>
+        </div>
+        <div class="col-2">
+            <img src="img/controller.png" class="controller">
+            <div class="color-box"></div>
+            <div class="add-btn">
+                <img src="img/add.png">
+                <p><small>Adicione no carrinho</small></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="social-links">
+        <img src="img/fb.png" alt="#">
+        <img src="img/tw.png" alt="#">
+        <img src="img/ig.png" alt="#">
+    </div>
+
+        <script>
+            var menuList = document.getElementById("menuList");
+
+            menuList.style.maxHeight = "0px"
+
+            function togglemenu() {
+                
+                if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "130px";
+                }
+                else
+                {
+                    menuList.style.maxHeight = "0px";
+                }
+            }
+        </script>
+
+    </div>
+</body>
+</html>
